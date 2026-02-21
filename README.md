@@ -132,16 +132,21 @@ Unit tests are available in the `tests/` directory.
 Run tests using:
 
 ```bash
-python -m pytest tests
+python -m unittest discover -s tests
 ```
 
 See the testing report :
 ```
 # run coverage
-coverage run -m pytest tests
+coverage run -m unittest discover tests
 
 # show report
 coverage report -m
+```
+
+Save to html :
+```
+coverage html
 ```
 
 ---
